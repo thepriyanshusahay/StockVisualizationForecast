@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student Registration Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Student Registration Form</h1>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" placeholder="Enter your name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" placeholder="Enter your email" required>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" placeholder="Enter your password" required>
+
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+			<label for="gender">Gender:</label>
+			<div class="radio-container">
+				<label class="radio-label"><input type="radio" name="gender" value="male" required> Male</label>
+				<label class="radio-label"><input type="radio" name="gender" value="female"> Female</label>
+				<label class="radio-label"><input type="radio" name="gender" value="other"> Other</label>
+			</div>
+
+			<label for="birthdate">Date of Birth:</label>
+			<input type="date" id="birthdate" required>
+
+			<label for="address">Address:</label>
+			<textarea id="address" placeholder="Enter your address" required></textarea>
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
